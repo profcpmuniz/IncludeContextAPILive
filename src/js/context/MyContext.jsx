@@ -10,6 +10,12 @@ export const MyContextProvider = ({anyComponent}) =>{
         setUserName(login)
     }
 
+    return (
+        <MyContext.Provider value={ {userName, authenticate} }>
+            {anyComponent}
+        </MyContext.Provider>
+
+    )
 
 
 
