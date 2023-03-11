@@ -4,12 +4,14 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { MyContextProvider } from "../context/MyContext.jsx";
 import LoginPage  from "../views/LoginPage.jsx";
+import { WelcomePage } from "../views/WelcomePage.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 			<MyContextProvider>
 				<LoginPage />
+				<WelcomePage />
 			</MyContextProvider>
 				
   			
